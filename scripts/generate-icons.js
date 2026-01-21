@@ -4,12 +4,12 @@ import { transform } from "@svgr/core";
 import path from "node:path";
 
 const SRC =
-    "symbols/web/**/materialsymbolsoutlined/*.svg";
+    "symbols/web/**/*.svg";
 const OUT_DIR = "src/icons";
 
 // ---------- filename filters ----------
-const isOutlined = (name) => /^[^_]+_24px\.svg$/.test(name);
-const isFilled = (name) => /^[^_]+_fill1_24px\.svg$/.test(name);
+const isOutlined = (name) => /^[\w_]+_24px\.svg$/.test(name);
+const isFilled = (name) => /^[\w_]+_fill1_24px\.svg$/.test(name);
 
 // ---------- name helpers ----------
 const baseName = (file) =>
