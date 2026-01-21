@@ -1,0 +1,12 @@
+import { IconBase, IconProps } from "../IconBase";
+
+export const TrendingDown = (props: IconProps) => (
+  <IconBase
+    {...props}
+    viewBox="0 -960 960 960"
+    paths={{
+      outlined: <><path d="M640-240v-80h104L536-526 376-366 80-664l56-56 240 240 160-160 264 264v-104h80v240H640Z"/></>,
+      filled: <><path d="M640-240v-80h104L536-526 376-366 80-664l56-56 240 240 160-160 264 264v-104h80v240H640Z"/></>,
+    }}
+  />
+);
