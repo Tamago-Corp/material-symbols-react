@@ -1,0 +1,12 @@
+import { IconBase, IconProps } from "../IconBase";
+
+export const Newsstand = (props: IconProps) => (
+  <IconBase
+    {...props}
+    viewBox="0 -960 960 960"
+    paths={{
+      outlined: <><path d="M80-160v-80h800v80H80Zm80-160v-320h80v320h-80Zm160 0v-480h80v480h-80Zm160 0v-480h80v480h-80Zm280 0L600-600l70-40 160 280-70 40Z"/></>,
+      filled: <><path d="M80-160v-80h800v80H80Zm80-160v-320h80v320h-80Zm160 0v-480h80v480h-80Zm160 0v-480h80v480h-80Zm280 0L600-600l70-40 160 280-70 40Z"/></>,
+    }}
+  />
+);

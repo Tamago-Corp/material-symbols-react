@@ -1,0 +1,12 @@
+import { IconBase, IconProps } from "../IconBase";
+
+export const Hov = (props: IconProps) => (
+  <IconBase
+    {...props}
+    viewBox="0 -960 960 960"
+    paths={{
+      outlined: <><path d="M480-80 240-480l240-400 240 400L480-80Zm0-156 147-244-147-244-147 244 147 244Zm0-244Z"/></>,
+      filled: <><path d="M480-80 240-480l240-400 240 400L480-80Z"/></>,
+    }}
+  />
+);
