@@ -1,4 +1,3 @@
-# generated icons
-dist/
-
 node_modules
+.pnpm-store
+*.log
