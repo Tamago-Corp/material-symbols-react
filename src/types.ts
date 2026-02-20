@@ -1,2 +1,2 @@
-export type IconVariant = "default" | "rounded";
-export type IconAppearance = "outlined" | "filled";
+export type IconVariant = "default" | "filled";
+export type IconAppearance = "outlined" | "rounded";

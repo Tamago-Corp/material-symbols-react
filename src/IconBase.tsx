@@ -1,14 +1,17 @@
 import React from 'react';
+import type { IconVariant, IconAppearance } from "./types";
 
 export interface IconProps extends React.SVGAttributes<SVGElement> {
     size?: number;
-    variant?: 'default' | 'filled';
-    appearance?: 'outlined' | 'rounded';
+    variant?: IconVariant;
+    appearance?: IconAppearance;
     className?: string;
 }
 
 export const IconBase = ({
     size = 24,
+    variant = "default",
+    appearance = "outlined",
     className = '',
     children,
     ...props

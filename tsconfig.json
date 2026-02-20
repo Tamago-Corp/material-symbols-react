@@ -6,8 +6,8 @@
             "DOM"
         ],
         "jsx": "react-jsx",
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "declaration": true,
         "declarationMap": true,
         "outDir": "dist",
