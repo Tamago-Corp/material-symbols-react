@@ -1,33 +1,27 @@
-import * as React from "react";
-import type { IconVariant } from "./types";
+import React from 'react';
 
-export type IconProps = React.SVGProps<SVGSVGElement> & {
+export interface IconProps extends React.SVGAttributes<SVGElement> {
     size?: number;
-    variant?: IconVariant;
-};
-
-type IconBaseProps = IconProps & {
-    paths: Record<IconVariant, React.ReactNode>;
-    viewBox: string;
-};
+    variant?: 'default' | 'filled';
+    appearance?: 'outlined' | 'rounded';
+    className?: string;
+}
 
 export const IconBase = ({
     size = 24,
-    variant = "outlined",
-    paths,
-    viewBox,
+    className = '',
+    children,
     ...props
-}: IconBaseProps) => {
-    return (
-        <svg
-            width={size}
-            height={size}
-            viewBox={viewBox}
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            {...props}
-        >
-            {paths[variant]}
-        </svg>
-    );
-};
+}: IconProps) => (
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        {...props}
+    >
+        {children}
+    </svg>
+);
