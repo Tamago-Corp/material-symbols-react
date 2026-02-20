@@ -1,0 +1,18 @@
+import React from 'react';
+import { IconBase, IconProps } from '../IconBase';
+
+export const Timer2 = ({ 
+  variant = 'default', 
+  appearance = 'outlined', 
+  ...props 
+}: IconProps) => {
+  const d = appearance === 'outlined' 
+    ? (variant === 'filled' ? "M320-200v-220q0-50 35-85t85-35h120v-100H320v-120h240q50 0 85 35t35 85v100q0 50-35 85t-85 35H440v100h240v120H320Z" : "M320-200v-220q0-50 35-85t85-35h120v-100H320v-120h240q50 0 85 35t35 85v100q0 50-35 85t-85 35H440v100h240v120H320Z")
+    : (variant === 'filled' ? "M380-760h180q50 0 85 35t35 85v100q0 50-35 85t-85 35H440v100h180q25 0 42.5 17.5T680-260q0 25-17.5 42.5T620-200H380q-25 0-42.5-17.5T320-260v-160q0-50 35-85t85-35h120v-100H380q-25 0-42.5-17.5T320-700q0-25 17.5-42.5T380-760Z" : "M380-760h180q50 0 85 35t35 85v100q0 50-35 85t-85 35H440v100h180q25 0 42.5 17.5T680-260q0 25-17.5 42.5T620-200H380q-25 0-42.5-17.5T320-260v-160q0-50 35-85t85-35h120v-100H380q-25 0-42.5-17.5T320-700q0-25 17.5-42.5T380-760Z");
+
+  return (
+    <IconBase {...props}>
+      <path d={d} />
+    </IconBase>
+  );
+};

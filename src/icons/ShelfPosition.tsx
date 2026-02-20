@@ -1,0 +1,18 @@
+import React from 'react';
+import { IconBase, IconProps } from '../IconBase';
+
+export const ShelfPosition = ({ 
+  variant = 'default', 
+  appearance = 'outlined', 
+  ...props 
+}: IconProps) => {
+  const d = appearance === 'outlined' 
+    ? (variant === 'filled' ? "M200-120q-33 0-56.5-23.5T120-200v-120h720v120q0 33-23.5 56.5T760-120H200Zm460-280v-440h100q33 0 56.5 23.5T840-760v360H660Zm-540 0v-360q0-33 23.5-56.5T200-840h100v440H120Zm260 0v-440h200v440H380Z" : "M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm560-200H200v120h560v-120Zm-100-80h100v-360H660v360Zm-460 0h100v-360H200v360Zm180 0h200v-360H380v360Z")
+    : (variant === 'filled' ? "M200-120q-33 0-56.5-23.5T120-200v-120h720v120q0 33-23.5 56.5T760-120H200Zm460-280v-440h100q33 0 56.5 23.5T840-760v360H660Zm-540 0v-360q0-33 23.5-56.5T200-840h100v440H120Zm260 0v-440h200v440H380Z" : "M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm560-200H200v120h560v-120Zm-100-80h100v-360H660v360Zm-460 0h100v-360H200v360Zm180 0h200v-360H380v360Z");
+
+  return (
+    <IconBase {...props}>
+      <path d={d} />
+    </IconBase>
+  );
+};
